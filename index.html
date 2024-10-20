@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EMI Calculator</h1>
+        <div class="form-container">
+            <label for="amount">Loan Amount (₹):</label>
+            <input type="number" id="amount" placeholder="Enter Loan Amount">
+
+            <label for="apr">Annual Interest Rate (%):</label>
+            <input type="number" id="apr" placeholder="Enter Interest Rate">
+
+            <label for="tenure">Tenure (Years):</label>
+            <input type="number" id="tenure" placeholder="Enter Tenure in Years">
+
+            <button id="calculate">Calculate EMI</button>
+        </div>
+
+        <div id="result">
+            <h2>EMI Summary</h2>
+            <p id="emiResult">Your EMI is: ₹<span id="emi"></span></p>
+            <p>Total Interest Payable: ₹<span id="totalInterest"></span></p>
+            <p>Total Payment (Principal + Interest): ₹<span id="totalPayment"></span></p>
+        </div>
+
+        <div id="monthly-breakdown">
+            <h3>Monthly Breakdown</h3>
+            <table id="monthTable">
+                <!-- Monthly breakdown data will be inserted here -->
+            </table>
+        </div>
+
+        <div id="yearly-breakdown">
+            <h3>Yearly Breakdown</h3>
+            <table id="yearTable">
+                <!-- Yearly breakdown data will be inserted here -->
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
